@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="EHg-mW-QG0">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="ViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="ViewController" customModule="InterviewKOKOFriend" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dSk-2a-uFX" customClass="FriendTableview" customModule="InterviewKOKOFriend" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="318" width="393" height="419"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GRJ-AS-lDb" customClass="TabbarView" customModule="InterviewKOKOFriend" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="737" width="393" height="115"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="115" id="dQK-aQ-eE9"/>
+                                </constraints>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="4zU-lc-cEd">
+                                <rect key="frame" x="30" y="103" width="333" height="156"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2be-6e-ffk" customClass="OwnAccountView" customModule="InterviewKOKOFriend" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="333" height="52"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="52" id="Z4U-SG-Hsr"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AFc-Rj-UWe">
+                                        <rect key="frame" x="0.0" y="60" width="333" height="96"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="96" id="883-Ey-ZwN"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Py4-bD-od2" customClass="TopbarView" customModule="InterviewKOKOFriend" customModuleProvider="target">
+                                <rect key="frame" x="30" y="268" width="140" height="50"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="140" id="N37-hd-Kl8"/>
+                                    <constraint firstAttribute="height" constant="50" id="eTK-FJ-mZh"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="0.94999999999999996" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="GRJ-AS-lDb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="0su-nN-FfA"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="4zU-lc-cEd" secondAttribute="trailing" constant="30" id="3a7-XO-H0z"/>
+                            <constraint firstItem="4zU-lc-cEd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="8RJ-7f-MDD"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dSk-2a-uFX" secondAttribute="trailing" id="Ikr-NY-SvB"/>
+                            <constraint firstItem="dSk-2a-uFX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="LOH-KD-oFy"/>
+                            <constraint firstItem="dSk-2a-uFX" firstAttribute="top" secondItem="Py4-bD-od2" secondAttribute="bottom" id="Mfd-ZK-sEX"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="GRJ-AS-lDb" secondAttribute="trailing" id="a4s-4b-AWD"/>
+                            <constraint firstItem="Py4-bD-od2" firstAttribute="top" secondItem="4zU-lc-cEd" secondAttribute="bottom" constant="9" id="aA6-Bn-q1B"/>
+                            <constraint firstItem="Py4-bD-od2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="bD2-cP-Z2L"/>
+                            <constraint firstItem="4zU-lc-cEd" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="jcf-La-pKn"/>
+                            <constraint firstItem="GRJ-AS-lDb" firstAttribute="bottom" secondItem="8bC-Xf-vdC" secondAttribute="bottom" id="z4O-u4-u1z"/>
+                            <constraint firstItem="GRJ-AS-lDb" firstAttribute="top" secondItem="dSk-2a-uFX" secondAttribute="bottom" id="zql-V3-4sq"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="ZCj-CG-20H"/>
+                    <connections>
+                        <outlet property="mAddFriendView" destination="AFc-Rj-UWe" id="Dh7-HT-erq"/>
+                        <outlet property="mAddfriendHeight" destination="883-Ey-ZwN" id="Dmu-cN-2Em"/>
+                        <outlet property="mCotentView" destination="dSk-2a-uFX" id="CDv-In-4Zk"/>
+                        <outlet property="mOwnAccountView" destination="2be-6e-ffk" id="CQY-nG-rS6"/>
+                        <outlet property="mOwnAccountViewHeight" destination="Z4U-SG-Hsr" id="awa-UD-CeD"/>
+                        <outlet property="mTabView" destination="GRJ-AS-lDb" id="FgD-m4-qU7"/>
+                        <outlet property="mTopContenStack" destination="4zU-lc-cEd" id="dVz-wi-8A8"/>
+                        <outlet property="mTopbarView" destination="Py4-bD-od2" id="JCd-el-Gkh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1874.0458015267175" y="3.5211267605633805"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="knS-Dg-xfM">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="EHg-mW-QG0" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="kcP-H7-75e">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="daj-nZ-nLb"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sEc-sy-y15" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="947.32824427480909" y="3.5211267605633805"/>
+        </scene>
+    </scenes>
+</document>

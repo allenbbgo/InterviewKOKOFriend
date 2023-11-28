@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" restorationIdentifier="FriendCellView" selectionStyle="default" indentationWidth="10" reuseIdentifier="FriendCellView" id="KGk-i7-Jjw" customClass="FriendCellView" customModule="InterviewKOKOFriend" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_friends_star" translatesAutoresizingMaskIntoConstraints="NO" id="8N4-bF-qxc">
+                        <rect key="frame" x="10" y="23" width="14" height="14"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="14" id="2Ov-BP-PnT"/>
+                            <constraint firstAttribute="height" constant="14" id="OYr-Rf-7sB"/>
+                        </constraints>
+                    </imageView>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_friends_list" translatesAutoresizingMaskIntoConstraints="NO" id="viw-ip-jd6">
+                        <rect key="frame" x="30" y="10" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="a5K-ak-2MF"/>
+                            <constraint firstAttribute="width" constant="40" id="kT3-x3-1R6"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="菜XX" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7k1-qj-wol">
+                        <rect key="frame" x="85" y="19" width="109" height="22"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="22" id="JLJ-mg-Xmq"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="jXi-EA-TBn">
+                        <rect key="frame" x="202" y="18" width="103" height="24"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Bk-UH-Rw8" customClass="GradientButton" customModule="InterviewKOKOFriend" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="43" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="DM8-sn-9Gh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="11"/>
+                                <color key="tintColor" name="SelectOnTabbar"/>
+                                <inset key="contentEdgeInsets" minX="10" minY="0.0" maxX="10" maxY="0.0"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="轉帳"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" name="SelectOnTabbar"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="startColor">
+                                        <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="endColor">
+                                        <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mpg-sP-n61" customClass="GradientButton" customModule="InterviewKOKOFriend" customModuleProvider="target">
+                                <rect key="frame" x="53" y="0.0" width="50" height="24"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="11"/>
+                                <color key="tintColor" name="SelectOffTabbar"/>
+                                <inset key="contentEdgeInsets" minX="5" minY="0.0" maxX="5" maxY="0.0"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title=" 邀請中 "/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="startColor">
+                                        <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="endColor">
+                                        <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="mpg-sP-n61" firstAttribute="top" secondItem="jXi-EA-TBn" secondAttribute="top" id="Oxl-Fd-jyc"/>
+                            <constraint firstAttribute="bottom" secondItem="mpg-sP-n61" secondAttribute="bottom" id="VVd-aG-q2c"/>
+                            <constraint firstAttribute="trailing" secondItem="mpg-sP-n61" secondAttribute="trailing" id="ZoW-cA-eDJ"/>
+                        </constraints>
+                    </stackView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gMj-JK-e5T">
+                        <rect key="frame" x="85" y="59" width="220" height="1"/>
+                        <color key="backgroundColor" white="0.84999999999999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="MZ3-XR-qUt"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="8N4-bF-qxc" secondAttribute="bottom" constant="23" id="0Mf-qo-7sE"/>
+                    <constraint firstItem="gMj-JK-e5T" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="85" id="0U5-6x-7Vy"/>
+                    <constraint firstAttribute="bottom" secondItem="gMj-JK-e5T" secondAttribute="bottom" id="4A1-dw-kls"/>
+                    <constraint firstItem="jXi-EA-TBn" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="18" id="AQP-22-pjY"/>
+                    <constraint firstItem="8N4-bF-qxc" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="Lpn-e0-HjP"/>
+                    <constraint firstItem="8N4-bF-qxc" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="23" id="M3l-yb-tSQ"/>
+                    <constraint firstItem="7k1-qj-wol" firstAttribute="leading" secondItem="viw-ip-jd6" secondAttribute="trailing" constant="15" id="NT7-g6-Gzg"/>
+                    <constraint firstItem="7k1-qj-wol" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="19" id="VWp-7j-i1v"/>
+                    <constraint firstItem="viw-ip-jd6" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="efy-Bc-EaS"/>
+                    <constraint firstAttribute="bottom" secondItem="jXi-EA-TBn" secondAttribute="bottom" constant="18" id="fpN-cJ-rM5"/>
+                    <constraint firstItem="viw-ip-jd6" firstAttribute="leading" secondItem="8N4-bF-qxc" secondAttribute="trailing" constant="6" id="hUH-AU-dAT"/>
+                    <constraint firstAttribute="trailing" secondItem="gMj-JK-e5T" secondAttribute="trailing" constant="15" id="i0X-bN-HLE"/>
+                    <constraint firstAttribute="trailing" secondItem="jXi-EA-TBn" secondAttribute="trailing" constant="15" id="iMg-ck-wTY"/>
+                    <constraint firstAttribute="bottom" secondItem="viw-ip-jd6" secondAttribute="bottom" constant="10" id="sNH-XL-ilS"/>
+                    <constraint firstItem="jXi-EA-TBn" firstAttribute="leading" secondItem="7k1-qj-wol" secondAttribute="trailing" constant="8" symbolic="YES" id="tom-LB-fuD"/>
+                    <constraint firstAttribute="bottom" secondItem="7k1-qj-wol" secondAttribute="bottom" constant="19" id="yyQ-vB-UkZ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <accessibility key="accessibilityConfiguration" identifier="FriendCellView"/>
+            <connections>
+                <outlet property="friendImageView" destination="viw-ip-jd6" id="kYa-1c-JiC"/>
+                <outlet property="friendName" destination="7k1-qj-wol" id="ZnP-R8-JAL"/>
+                <outlet property="inviteBtn" destination="mpg-sP-n61" id="d2z-Ug-5tD"/>
+                <outlet property="isTopImg" destination="8N4-bF-qxc" id="Lr1-1N-5aX"/>
+                <outlet property="transferBtn" destination="8Bk-UH-Rw8" id="8w3-yU-EKP"/>
+            </connections>
+            <point key="canvasLocation" x="138.93129770992365" y="19.718309859154932"/>
+        </tableViewCell>
+    </objects>
+    <designables>
+        <designable name="8Bk-UH-Rw8">
+            <size key="intrinsicContentSize" width="43" height="14"/>
+        </designable>
+        <designable name="mpg-sP-n61">
+            <size key="intrinsicContentSize" width="50" height="14"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="ic_friends_star" width="14" height="14"/>
+        <image name="img_friends_list" width="40" height="40"/>
+        <namedColor name="SelectOffTabbar">
+            <color red="0.60000002384185791" green="0.60000002384185791" blue="0.60000002384185791" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="SelectOnTabbar">
+            <color red="0.92500001192092896" green="0.0" blue="0.54900002479553223" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

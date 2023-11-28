@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SearFriendView" customModule="InterviewKOKOFriend" customModuleProvider="target">
+            <connections>
+                <outlet property="searchTextField" destination="bDe-dx-j88" id="m2b-8A-v17"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="36"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="myZ-Yv-x85">
+                    <rect key="frame" x="0.0" y="0.0" width="345" height="36"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="magnifyingglass" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="6tF-6p-Alw">
+                            <rect key="frame" x="10" y="6.9999999999999964" width="24" height="22.333333333333336"/>
+                            <color key="tintColor" red="0.57786303760000002" green="0.57856601480000003" blue="0.59985190629999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="24" id="ISc-ev-Ahp"/>
+                                <constraint firstAttribute="height" constant="24" id="MPu-Kx-FMb"/>
+                            </constraints>
+                        </imageView>
+                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="想轉一筆給誰呢？" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bDe-dx-j88">
+                            <rect key="frame" x="42" y="1" width="303" height="34"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="34" id="Tej-qa-b0e"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                    </subviews>
+                    <color key="backgroundColor" red="0.94364750389999996" green="0.94384580849999999" blue="0.94997316600000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="bDe-dx-j88" secondAttribute="bottom" constant="1" id="UPs-tJ-gwP"/>
+                        <constraint firstItem="bDe-dx-j88" firstAttribute="leading" secondItem="6tF-6p-Alw" secondAttribute="trailing" constant="8" id="bIU-3h-r8M"/>
+                        <constraint firstItem="6tF-6p-Alw" firstAttribute="leading" secondItem="myZ-Yv-x85" secondAttribute="leading" constant="10" id="fT2-O5-eLT"/>
+                        <constraint firstItem="bDe-dx-j88" firstAttribute="top" secondItem="myZ-Yv-x85" secondAttribute="top" constant="1" id="hEM-6L-M7N"/>
+                        <constraint firstAttribute="trailing" secondItem="bDe-dx-j88" secondAttribute="trailing" id="hsA-6Q-D6z"/>
+                        <constraint firstItem="6tF-6p-Alw" firstAttribute="centerY" secondItem="myZ-Yv-x85" secondAttribute="centerY" id="qHq-q5-Ddo"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="clipsToBounds" value="YES"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="10"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_btn_add_friends" translatesAutoresizingMaskIntoConstraints="NO" id="uMx-PI-D7i">
+                    <rect key="frame" x="353" y="6" width="24" height="24"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="24" id="Ucn-JZ-cwf"/>
+                        <constraint firstAttribute="height" constant="24" id="hMK-jD-MLw"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="uMx-PI-D7i" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="9Br-ub-TxF"/>
+                <constraint firstItem="uMx-PI-D7i" firstAttribute="leading" secondItem="myZ-Yv-x85" secondAttribute="trailing" constant="8" symbolic="YES" id="DDn-Xb-df9"/>
+                <constraint firstItem="myZ-Yv-x85" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="ETY-9i-FVh"/>
+                <constraint firstItem="myZ-Yv-x85" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="TCt-xu-kH5"/>
+                <constraint firstAttribute="trailing" secondItem="uMx-PI-D7i" secondAttribute="trailing" constant="16" id="ywU-uO-4NH"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="139.69465648854961" y="19.718309859154932"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic_btn_add_friends" width="25" height="25"/>
+        <image name="magnifyingglass" catalog="system" width="128" height="117"/>
+    </resources>
+</document>

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AddFriendView" customModule="InterviewKOKOFriend" customModuleProvider="target">
+            <connections>
+                <outlet property="addCancelBtn" destination="aDM-Mg-SlL" id="Rwt-W4-obn"/>
+                <outlet property="addFriendBtn" destination="7HM-ZB-84f" id="xzR-xG-AhD"/>
+                <outlet property="friendImageView" destination="K1a-34-aDd" id="gCD-gk-c7b"/>
+                <outlet property="friendName" destination="ISK-gZ-ZoW" id="d1b-II-DvI"/>
+                <outlet property="friendShadowView" destination="LKk-y5-Kn9" id="Ami-CQ-DLl"/>
+                <outlet property="friendView" destination="hwr-2R-Voy" id="djW-NL-mzf"/>
+                <outlet property="toggleBtn" destination="KqA-xU-yMP" id="Ewh-A3-Sak"/>
+                <outlet property="view" destination="iN0-l3-epB" id="Ezb-N3-CEn"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="96"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hwr-2R-Voy">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="70"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_friends_list" translatesAutoresizingMaskIntoConstraints="NO" id="K1a-34-aDd">
+                            <rect key="frame" x="15" y="15" width="40" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="40" id="HbH-ld-keo"/>
+                                <constraint firstAttribute="height" constant="40" id="x0i-vU-xNR"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ISK-gZ-ZoW">
+                            <rect key="frame" x="70" y="14" width="225" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="邀請你成為好友" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HpZ-g9-3sW">
+                            <rect key="frame" x="70" y="37" width="225" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KqA-xU-yMP">
+                            <rect key="frame" x="0.0" y="0.0" width="393" height="70"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aDM-Mg-SlL">
+                            <rect key="frame" x="348" y="20" width="30" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="XJp-fM-0dy"/>
+                                <constraint firstAttribute="width" constant="30" id="dCl-fe-FRP"/>
+                            </constraints>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" image="btn_friends_delet"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7HM-ZB-84f">
+                            <rect key="frame" x="303" y="20" width="30" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="30" id="cYu-xr-DIK"/>
+                                <constraint firstAttribute="height" constant="30" id="t14-Lx-sCI"/>
+                            </constraints>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" image="btn_friends_agree"/>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <accessibility key="accessibilityConfiguration">
+                        <bool key="isElement" value="YES"/>
+                    </accessibility>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="70" id="1NH-KR-18E"/>
+                        <constraint firstItem="KqA-xU-yMP" firstAttribute="top" secondItem="hwr-2R-Voy" secondAttribute="top" id="1UR-N1-S5D"/>
+                        <constraint firstItem="ISK-gZ-ZoW" firstAttribute="leading" secondItem="K1a-34-aDd" secondAttribute="trailing" constant="15" id="5cZ-BK-NW9"/>
+                        <constraint firstItem="K1a-34-aDd" firstAttribute="top" secondItem="hwr-2R-Voy" secondAttribute="top" constant="15" id="84J-Dt-3bw"/>
+                        <constraint firstItem="ISK-gZ-ZoW" firstAttribute="top" secondItem="hwr-2R-Voy" secondAttribute="top" constant="14" id="8e9-uA-KEB"/>
+                        <constraint firstAttribute="bottom" secondItem="K1a-34-aDd" secondAttribute="bottom" constant="15" id="B7Y-Gl-dxX"/>
+                        <constraint firstItem="7HM-ZB-84f" firstAttribute="leading" secondItem="HpZ-g9-3sW" secondAttribute="trailing" constant="8" symbolic="YES" id="GY4-QJ-XXe"/>
+                        <constraint firstItem="aDM-Mg-SlL" firstAttribute="leading" secondItem="7HM-ZB-84f" secondAttribute="trailing" constant="15" id="GbJ-Yh-q8h"/>
+                        <constraint firstAttribute="bottom" secondItem="aDM-Mg-SlL" secondAttribute="bottom" constant="20" symbolic="YES" id="HGg-4A-MAc"/>
+                        <constraint firstItem="HpZ-g9-3sW" firstAttribute="top" secondItem="ISK-gZ-ZoW" secondAttribute="bottom" constant="2" id="Kga-G3-ah4"/>
+                        <constraint firstItem="aDM-Mg-SlL" firstAttribute="top" secondItem="hwr-2R-Voy" secondAttribute="top" constant="20" symbolic="YES" id="MPC-K8-wWM"/>
+                        <constraint firstItem="KqA-xU-yMP" firstAttribute="leading" secondItem="hwr-2R-Voy" secondAttribute="leading" id="O5f-mn-rj4"/>
+                        <constraint firstItem="7HM-ZB-84f" firstAttribute="leading" secondItem="ISK-gZ-ZoW" secondAttribute="trailing" constant="8" symbolic="YES" id="PUb-lv-h8E"/>
+                        <constraint firstAttribute="bottom" secondItem="7HM-ZB-84f" secondAttribute="bottom" constant="20" symbolic="YES" id="V9d-AW-Er0"/>
+                        <constraint firstAttribute="trailing" secondItem="KqA-xU-yMP" secondAttribute="trailing" id="WQJ-Lu-8ab"/>
+                        <constraint firstAttribute="trailing" secondItem="aDM-Mg-SlL" secondAttribute="trailing" constant="15" id="X1F-7s-7Yw"/>
+                        <constraint firstItem="K1a-34-aDd" firstAttribute="leading" secondItem="hwr-2R-Voy" secondAttribute="leading" constant="15" id="XtQ-St-B8P"/>
+                        <constraint firstItem="7HM-ZB-84f" firstAttribute="top" secondItem="hwr-2R-Voy" secondAttribute="top" constant="20" symbolic="YES" id="ajL-UV-PY8"/>
+                        <constraint firstAttribute="bottom" secondItem="HpZ-g9-3sW" secondAttribute="bottom" constant="12" id="ciD-lo-ATv"/>
+                        <constraint firstItem="HpZ-g9-3sW" firstAttribute="leading" secondItem="K1a-34-aDd" secondAttribute="trailing" constant="15" id="jo6-Cc-HtI"/>
+                        <constraint firstAttribute="bottom" secondItem="KqA-xU-yMP" secondAttribute="bottom" id="wd7-Me-e4h"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LKk-y5-Kn9">
+                    <rect key="frame" x="21" y="70" width="350" height="10"/>
+                    <color key="backgroundColor" white="1" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="10" id="hJY-Hj-KXB"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="hwr-2R-Voy" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="3J5-Gx-30j"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="LKk-y5-Kn9" secondAttribute="bottom" constant="16" id="8l6-28-aPA"/>
+                <constraint firstItem="LKk-y5-Kn9" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="21" id="Ds2-Hz-iAN"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="LKk-y5-Kn9" secondAttribute="trailing" constant="22" id="RzE-hN-r2L"/>
+                <constraint firstItem="hwr-2R-Voy" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="bUV-ME-v36"/>
+                <constraint firstItem="hwr-2R-Voy" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="fQV-wu-3mt"/>
+                <constraint firstItem="LKk-y5-Kn9" firstAttribute="top" secondItem="hwr-2R-Voy" secondAttribute="bottom" id="lRX-ta-35A"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="17.557251908396946" y="-246.47887323943664"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="btn_friends_agree" width="30" height="30"/>
+        <image name="btn_friends_delet" width="30" height="30"/>
+        <image name="img_friends_list" width="40" height="40"/>
+    </resources>
+</document>

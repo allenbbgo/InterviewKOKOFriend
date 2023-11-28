@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "EA6C605D-5E1D-4F2D-9AC4-3034280B0F8B"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A1527568-663C-43BC-B1E3-61FA3738CC40"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "InterviewKOKOFriend/View/ComboView/ComboViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "101"
+            endingLineNumber = "101"
+            landmarkName = "cityNumLabel"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "A1527568-663C-43BC-B1E3-61FA3738CC40 - 8dea7a5dc7c564a2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; InterviewKOKOFriend.ComboTextField in variable initialization expression of InterviewKOKOFriend.ComboViewController.n2Label : InterviewKOKOFriend.ComboTextField"
+                  moduleName = "InterviewKOKOFriend"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/allen/IOS_swift/InterviewKOKOFriend/InterviewKOKOFriend/View/ComboView/ComboViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "51"
+                  endingLineNumber = "51"
+                  offsetFromSymbolStart = "294">
+               </Location>
+               <Location
+                  uuid = "A1527568-663C-43BC-B1E3-61FA3738CC40 - 34037180e2410e72"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (SnapKit.ConstraintMaker) -&gt; () in closure #1 () -&gt; InterviewKOKOFriend.ComboTextField in variable initialization expression of InterviewKOKOFriend.ComboViewController.n2Label : InterviewKOKOFriend.ComboTextField"
+                  moduleName = "InterviewKOKOFriend"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/allen/IOS_swift/InterviewKOKOFriend/InterviewKOKOFriend/View/ComboView/ComboViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "52"
+                  endingLineNumber = "52"
+                  offsetFromSymbolStart = "25">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

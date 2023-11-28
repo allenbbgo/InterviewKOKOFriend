@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ComboViewController" customModule="InterviewKOKOFriend" customModuleProvider="target">
+            <connections>
+                <outlet property="mCenterContentView" destination="wF5-c6-p8z" id="hYT-AV-r2K"/>
+                <outlet property="mFootContentView" destination="BkG-1P-aDt" id="LTV-lf-TLb"/>
+                <outlet property="mMainStackView" destination="dpC-Ba-SPT" id="m6g-Uu-FGX"/>
+                <outlet property="mScrollView" destination="LJf-Sn-2LT" id="cZF-g3-t6b"/>
+                <outlet property="mTopContentView" destination="U5v-Ep-SmA" id="rRd-tH-ZQZ"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LJf-Sn-2LT">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="dpC-Ba-SPT">
+                            <rect key="frame" x="0.0" y="0.0" width="393" height="965"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="U5v-Ep-SmA">
+                                    <rect key="frame" x="0.0" y="0.0" width="393" height="85"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="85" id="e3N-aI-O9F"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pHg-wn-qaa" customClass="ComboContentView" customModule="InterviewKOKOFriend" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="95" width="393" height="170"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="170" id="drP-7D-VN4"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wF5-c6-p8z">
+                                    <rect key="frame" x="0.0" y="275" width="393" height="300"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="300" id="gyN-zQ-Ngm"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BkG-1P-aDt" customClass="ComboPrivacyView" customModule="InterviewKOKOFriend" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="585" width="393" height="380"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="380" id="tRZ-2k-azX"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="dpC-Ba-SPT" firstAttribute="width" secondItem="iH3-lN-NWe" secondAttribute="width" id="e5P-Rm-ctG"/>
+                    </constraints>
+                    <viewLayoutGuide key="contentLayoutGuide" id="BST-Pt-Db9"/>
+                    <viewLayoutGuide key="frameLayoutGuide" id="iH3-lN-NWe"/>
+                </scrollView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" red="0.98756378889999996" green="0.98756378889999996" blue="0.98756378889999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="LJf-Sn-2LT" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="DFC-hT-qMR"/>
+                <constraint firstAttribute="bottom" secondItem="LJf-Sn-2LT" secondAttribute="bottom" id="PuU-my-N1T"/>
+                <constraint firstItem="LJf-Sn-2LT" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="cmX-Fb-oFA"/>
+                <constraint firstItem="LJf-Sn-2LT" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="jVM-nM-KBx"/>
+            </constraints>
+            <point key="canvasLocation" x="136.64122137404578" y="19.718309859154932"/>
+        </view>
+    </objects>
+</document>
