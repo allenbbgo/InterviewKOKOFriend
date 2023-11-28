@@ -117,7 +117,6 @@ class mainViewModel: AddFriendBtnDelegate, SearchFriendToggleViewDelegate,Friend
             .receive(on: DispatchQueue.main)
             .sink(receiveCompletion: { completion in // 5
                             print(completion)
-//                            self.friendTableview.mTableview.refreshControl?.endRefreshing()
                         }, receiveValue: { repositories in
                             print("kokoFriendUrl3 has \(repositories.response.count) repositories")
                             self.allFriendData = repositories.response

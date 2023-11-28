@@ -99,7 +99,7 @@ class ComboViewController: UIViewController {
         let label = ComboTextField()
         label.contentTextField.placeholder = "區碼"
         label.snp.makeConstraints({ (make) in
-                make.width.equalTo(85) // <---
+                make.width.equalTo(85) 
             })
         return label
        }()
@@ -114,21 +114,18 @@ class ComboViewController: UIViewController {
     var houseLabel: ComboTextField = {
        let label = ComboTextField()
         label.contentTextField.placeholder = "房屋所有權"
-//        label.dropMenuButton.isHidden = true
        return label
    }()
     
     var liveTimeLabel: ComboTextField = {
        let label = ComboTextField()
         label.contentTextField.placeholder = "現居時間"
-//        label.dropMenuButton.isHidden = true
        return label
    }()
     
     var cardAddressLabel: ComboTextField = {
        let label = ComboTextField()
         label.contentTextField.placeholder = "卡片/帳單收件地址"
-//        label.dropMenuButton.isHidden = true
        return label
    }()
     
@@ -163,7 +160,6 @@ class ComboViewController: UIViewController {
     lazy var addressStackView: UIStackView = {
        let stack = UIStackView(arrangedSubviews: [addressLabel])
        stack.axis = .horizontal
-//       stack.alignment = .center
         stack.distribution = .fill
        stack.spacing = 16
        return stack
@@ -173,7 +169,6 @@ class ComboViewController: UIViewController {
     lazy var cityNumStackView: UIStackView = {
        let stack = UIStackView(arrangedSubviews: [cityNumLabel, houseNumLabel])
        stack.axis = .horizontal
-//       stack.alignment = .center
         stack.distribution = .fill
        stack.spacing = 16
        return stack
@@ -182,7 +177,6 @@ class ComboViewController: UIViewController {
     lazy var houseStackView: UIStackView = {
        let stack = UIStackView(arrangedSubviews: [houseLabel])
        stack.axis = .horizontal
-//       stack.alignment = .center
         stack.distribution = .fill
        stack.spacing = 16
        return stack
@@ -191,7 +185,6 @@ class ComboViewController: UIViewController {
     lazy var liveTimeStackView: UIStackView = {
        let stack = UIStackView(arrangedSubviews: [liveTimeLabel])
        stack.axis = .horizontal
-//       stack.alignment = .center
         stack.distribution = .fill
        stack.spacing = 16
        return stack
@@ -201,7 +194,6 @@ class ComboViewController: UIViewController {
     lazy var cardAddressStackView: UIStackView = {
        let stack = UIStackView(arrangedSubviews: [cardAddressLabel])
        stack.axis = .horizontal
-//       stack.alignment = .center
         stack.distribution = .fill
        stack.spacing = 16
        return stack
@@ -225,39 +217,24 @@ class ComboViewController: UIViewController {
             
             topStackView.snp.makeConstraints { make in
                 make.leading.trailing.equalToSuperview()
-                        // center Y to image
                 make.top.equalTo(topMainStackView.snp.top)
-
                     }
             
             topMainStackView.snp.makeConstraints { make in
-                        // left padding to image for 12px
-//                make.leading.equalTo(questionContentView.snp.leading).offset(30)
-                
+  
                 make.leading.trailing.equalToSuperview().inset(30)
-                        // center Y to image
                 make.top.equalTo(mTopContentView.snp.top)
-//                        make.centerY.equalTo(questionContentView.snp.centerY)
-                        // trailing to superview
-//                        make.trailing.equalToSuperview().offset(-20)
                     }
 
             cityStackView.snp.makeConstraints { make in
-                        // left padding to image for 12px
-//                make.leading.equalTo(questionContentView.snp.leading).offset(30)
-                
+
                 make.leading.trailing.equalToSuperview().inset(30)
-                        // center Y to image
                 make.top.equalTo(mCenterContentView.snp.top)
-//                        make.centerY.equalTo(questionContentView.snp.centerY)
-                        // trailing to superview
-//                        make.trailing.equalToSuperview().offset(-20)
                     }
             
             addressStackView.snp.makeConstraints { make in
  
                 make.leading.trailing.equalToSuperview().inset(30)
-                        // center Y to image
                 make.top.equalTo(cityStackView.snp.bottom).offset(10)
 
                     }
@@ -265,7 +242,6 @@ class ComboViewController: UIViewController {
             cityNumStackView.snp.makeConstraints { make in
  
                 make.leading.trailing.equalToSuperview().inset(30)
-                        // center Y to image
                 make.top.equalTo(addressStackView.snp.bottom).offset(10)
 
                     }
@@ -273,7 +249,6 @@ class ComboViewController: UIViewController {
             houseStackView.snp.makeConstraints { make in
  
                 make.leading.trailing.equalToSuperview().inset(30)
-                        // center Y to image
                 make.top.equalTo(cityNumStackView.snp.bottom).offset(10)
 
                     }
@@ -281,7 +256,6 @@ class ComboViewController: UIViewController {
             liveTimeStackView.snp.makeConstraints { make in
  
                 make.leading.trailing.equalToSuperview().inset(30)
-                        // center Y to image
                 make.top.equalTo(houseStackView.snp.bottom).offset(10)
 
                     }
@@ -289,7 +263,6 @@ class ComboViewController: UIViewController {
             cardAddressStackView.snp.makeConstraints { make in
  
                 make.leading.trailing.equalToSuperview().inset(30)
-                        // center Y to image
                 make.top.equalTo(liveTimeStackView.snp.bottom).offset(10)
 
                     }
@@ -309,36 +282,7 @@ class ComboViewController: UIViewController {
             self.navigationItem.rightBarButtonItem  = logoutBarButtonItem
             self.navigationItem.leftBarButtonItems = [withdrawBarButtonItem]
             
-            
-            
-//            scrollView = UIScrollView()
-//            scrollView.translatesAutoresizingMaskIntoConstraints = false
-//            view.addSubview(scrollView)
-
-//            view.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "H:|[scrollView]|", options: .alignAllCenterX, metrics: nil, views: ["scrollView": scrollView]))
-//            view.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "V:|[scrollView]|", options: .alignAllCenterX, metrics: nil, views: ["scrollView": scrollView]))
-
-
-//            stackView = UIStackView()
-//            stackView.translatesAutoresizingMaskIntoConstraints = false
             mMainStackView.axis = .vertical
-//            scrollView.addSubview(stackView)
-
-//            scrollView.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "H:|[stackView]|", options: NSLayoutConstraint.FormatOptions.alignAllCenterX, metrics: nil, views: ["stackView": stackView]))
-//            scrollView.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "V:|[stackView]", options: NSLayoutConstraint.FormatOptions.alignAllCenterX, metrics: nil, views: ["stackView": stackView]))
-
-//            for _ in 1 ..< 100 {
-//                let vw = UIButton(type: UIButton.ButtonType.system)
-//                vw.setTitle("Button", for: .normal)
-//                stackView.addArrangedSubview(vw)
-//            }
-            
-//            for _ in 1 ..< 100 {
-//                let cotentView = ComboContentView()
-//                stackView.addArrangedSubview(cotentView)
-//            }
-            
-           
             
         }
 
@@ -350,7 +294,7 @@ class ComboViewController: UIViewController {
     
     
     @objc func returnMainView(){
-//        self.navigationController?.popViewController(animated: true)
+
         self.dismiss(animated:true, completion: nil)
     }
 

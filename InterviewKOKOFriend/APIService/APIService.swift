@@ -66,9 +66,7 @@ final class APIService{
                     res = response
                     completion(.success(response))
                 }
-                
-                
-//                return response
+     
             }catch{
                 let json = try? JSONSerialization.jsonObject(with: data)
                 print(String(describing: json))

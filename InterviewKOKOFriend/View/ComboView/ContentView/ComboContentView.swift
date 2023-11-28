@@ -37,9 +37,7 @@ class ComboContentView:UIView{
         ]
  
         addSubview(view)
-//        self.view = view
-        
-        
+       
         
     }
 }

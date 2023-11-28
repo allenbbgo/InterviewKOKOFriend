@@ -20,7 +20,6 @@ public class TopbarButton: UIButton {
     @IBOutlet weak var topbarLabel: UILabel!
     @IBOutlet weak var topbarImage: UIImageView!
     
-//    @IBOutlet weak var badgeLabel: UILabel!
     
     var badgeText = ""
     

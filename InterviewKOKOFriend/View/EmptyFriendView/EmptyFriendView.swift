@@ -37,9 +37,7 @@ class EmptyFriendView: UIView {
            ]
     
            addSubview(view)
-//           self.view = view
-           
-           
+          
            
        }
 

@@ -95,10 +95,7 @@ class AddFriendTableview:UIView, UITableViewDelegate, UITableViewDataSource{
         
        
         mTableview.register(UINib(nibName: "AddFriendCellView", bundle: nil), forCellReuseIdentifier: "AddFriendCellView")
-//        mTableview.register(AddFriendView.self, forHeaderFooterViewReuseIdentifier: "MyHeaderView")
-        
-        
-        
+       
         
         
     }

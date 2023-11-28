@@ -61,7 +61,7 @@ class SearFriendView:UIView,UITextFieldDelegate{
         ]
  
         addSubview(view)
-//        self.view = view
+
         
     }
     

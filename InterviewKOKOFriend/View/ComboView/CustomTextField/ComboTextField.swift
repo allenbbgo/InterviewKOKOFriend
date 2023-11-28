@@ -42,8 +42,7 @@ class ComboTextField:UIView{
         ]
  
         addSubview(view)
-//        self.view = view
-        
+
         
         
     }

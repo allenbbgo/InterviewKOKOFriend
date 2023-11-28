@@ -65,9 +65,7 @@ class ComboPrivacyView:UIView{
         ]
  
         addSubview(view)
-//        self.view = view
-        
-        
+       
         
     }
 }

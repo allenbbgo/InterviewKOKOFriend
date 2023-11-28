@@ -35,9 +35,7 @@ class AddFriendView:UIView{
     override init(frame: CGRect) {
         super.init(frame: frame)
         loadViewFromNib()
-        
-//        toggleBtn.addTarget(self, action: #selector(toggleView), for: .touchUpInside)
-        
+       
         addFriendBtn.addTarget(self, action: #selector(addFriendAction), for: .touchUpInside)
         addCancelBtn.addTarget(self, action: #selector(cancelAddFriendAction), for: .touchUpInside)
         
@@ -85,7 +83,6 @@ class AddFriendView:UIView{
         let nib = UINib(nibName: String(describing: type(of: self)), bundle: bundle)
         let view = nib.instantiate(withOwner: self, options: nil).first as! UIView
         view.frame = bounds
-//        view.isUserInteractionEnabled = false
         view.autoresizingMask = [
             UIView.AutoresizingMask.flexibleWidth,
             UIView.AutoresizingMask.flexibleHeight
